@@ -1,0 +1,90 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  padding: 2.5em;
+  border-radius: 4px;
+  justify-items: center;
+  
+}
+
+label {
+  color: rgba(128, 128, 128, 0.664);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#fname,
+#phone,
+#email,
+#message {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  resize: vertical;
+}
+
+#submit {
+  background-color: rgba(3, 102, 214, 0.6);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: rgba(3, 102, 214, 0.9);
+}
+
+.formContainer > form {
+  border-radius: 2px;
+  padding: 20px;
+  width: 400px;
+  align-self: center;
+  animation: fadeIn 1s;
+}
+.info {
+  animation: fadeIn 1s;
+}
+
+.info > h4 {
+  color: rgba(3, 102, 214, 0.7);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.info > p {
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+  margin: 15px;
+}
+
+#fa-Road, #fa-Phone, #fa-Envelope{
+  margin-right: 10px;
+  padding: 10px;
+  color: rgba(3, 102, 214, 0.7);
+}
+
+@media screen and (max-width: 950px) {
+  .formContainer > form {
+    width: 340px;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
